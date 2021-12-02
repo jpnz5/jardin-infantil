@@ -13,10 +13,6 @@ body {
   font: normal 16px "Nunito", sans-serif;
   color: #4e4e4e; }
 
-/* Colores nav bar , headings, links*/
-h1, h3, .btn {
-  font-weight: 800; }
-
 h1, h3, footer ul a, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link, .dropdown-item {
   color: #2EC4B6; }
 
