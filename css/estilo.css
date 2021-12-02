@@ -15,7 +15,7 @@ body {
 
 /* Colores nav bar , headings, links*/
 h1, h3, .btn {
-  font: normal 800 "Nunito", sans-serif; }
+  font: 800 "Nunito", sans-serif; }
 
 h1, h3, footer ul a, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link, .dropdown-item {
   color: #2EC4B6; }
