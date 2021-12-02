@@ -7,6 +7,9 @@ body{
 }
 
 /* Colores nav bar , headings, links*/
+h1, h3, .btn{
+    font: $title-font;
+}
 
 h1,h3, footer ul a, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link, .dropdown-item{ color: $primary;}
 
@@ -44,7 +47,7 @@ table{
 }
 
 .bg-special, th.table-accent, td.table-accent{
-    background-color: $neutral;
+    background-color: $neutral-secondary;
 }
 .rounded-3, th.table-accent, td.table-accent, .btn-primary{
     border-radius: 2em !important;

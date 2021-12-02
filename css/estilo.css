@@ -14,6 +14,9 @@ body {
   color: #4e4e4e; }
 
 /* Colores nav bar , headings, links*/
+h1, h3, .btn {
+  font: normal 800 20px "Nunito", sans-serif; }
+
 h1, h3, footer ul a, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link, .dropdown-item {
   color: #2EC4B6; }
 
@@ -44,7 +47,7 @@ table {
   border-collapse: separate; }
 
 .bg-special, th.table-accent, td.table-accent {
-  background-color: #fff; }
+  background-color: #e8fcfa; }
 
 .rounded-3, th.table-accent, td.table-accent, .btn-primary {
   border-radius: 2em !important; }
