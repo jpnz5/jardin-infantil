@@ -1,12 +1,6 @@
 /*Colores*/
 /*spacing*/
-/*  Colores  */
-h1, h3, footer ul a, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link, .dropdown-item {
-  color: #2EC4B6; }
-
-footer ul a:hover, .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus, .dropdown-item:hover {
-  color: #ffb048; }
-
+/*Texto*/
 /*animaciones*/
 @keyframes aparecer {
   0% {
@@ -18,6 +12,13 @@ footer ul a:hover, .navbar-light .navbar-nav .nav-link:hover, .navbar-light .nav
 body {
   font: normal 16px "Nunito", sans-serif;
   color: #4e4e4e; }
+
+/* Colores nav bar , headings, links*/
+h1, h3, footer ul a, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link, .dropdown-item {
+  color: #2EC4B6; }
+
+footer ul a:hover, .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus, .dropdown-item:hover {
+  color: #ffb048; }
 
 /*    Botones   */
 .btn-primary {
