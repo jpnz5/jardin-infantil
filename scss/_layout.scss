@@ -1,0 +1,77 @@
+/*  Body  */
+body{
+    font: $body-font;
+    color: $secondary;
+}
+
+/*    Botones   */
+.btn-primary{
+    background-color: $accent;
+    border-color: $accent;
+}
+.btn-primary:hover,.btn-primary:focus {
+    background-color: #2EC4B6;
+    border-color: #2EC4B6;
+}
+
+/*    Cards   */
+.dashed-border{
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='32' ry='32' stroke='%23FFB048FF' stroke-width='1' stroke-dasharray='7%2c 10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    border-radius: 32px;
+}
+
+
+/*  Formularios inico  */
+
+.neutral-border{
+    border: solid 1px #d8d8d8;
+}
+
+
+/*    Tabla    */
+
+table{
+    border-spacing: $p10*2;
+    border-collapse: separate;
+}
+
+.bg-special, th.table-accent, td.table-accent{
+    background-color: $neutral;
+}
+.rounded-3, th.table-accent, td.table-accent, .btn-primary{
+    border-radius: 2em !important;
+} 
+
+/*  MEDIA QUERIES   */
+@media only screen and (min-width: 1024px) {
+    .table{
+        width:$width*0.6;
+    }
+
+    .table-accent{
+        width:$width*0.25;
+    }
+
+}
+
+@media only screen and (min-width: 768px){
+
+}
+
+
+/*Animaciones y transiciones*/
+
+.btn{
+    transition: background-color 0.4s;
+}
+
+body{
+    animation-duration: $normal-duration;
+    animation-name: aparecer;
+}
+
+
+
+
+
+

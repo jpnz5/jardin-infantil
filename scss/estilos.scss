@@ -1,0 +1,20 @@
+@import "variables";
+@import "typography";
+@import "layout";
+@import "keyframes";
+@import "mixins";
+
+/*Reset*/
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    list-style-type: none;
+}
+button, textarea, input, input[type="submit" i], input[type="reset" i]{
+    appearance: none;
+    border:none;
+}
+
+
+
