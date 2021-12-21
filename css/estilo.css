@@ -1,5 +1,6 @@
 /*Colores*/
-/*spacing*/
+/*bordes*/
+/*espacios*/
 /*Texto*/
 /*animaciones*/
 @keyframes aparecer {
@@ -37,7 +38,7 @@ footer ul a:hover, .navbar-light .navbar-nav .nav-link:hover, .navbar-light .nav
   background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='32' ry='32' stroke='%23FFB048FF' stroke-width='1' stroke-dasharray='7%2c 10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
   border-radius: 32px; }
 
-/*  Formularios inico  */
+/*  Formularios inicio  */
 .neutral-border {
   border: solid 1px #d8d8d8; }
 
@@ -52,13 +53,6 @@ table {
 .rounded-3, th.table-accent, td.table-accent, .btn-primary {
   border-radius: 2em !important; }
 
-/*  MEDIA QUERIES   */
-@media only screen and (min-width: 1024px) {
-  .table {
-    width: 60%; }
-  .table-accent {
-    width: 25%; } }
-
 /*Animaciones y transiciones*/
 .btn {
   transition: background-color 0.4s; }
@@ -66,6 +60,41 @@ table {
 body {
   animation-duration: 1.5s;
   animation-name: aparecer; }
+
+/*  MEDIA QUERIES   */
+@media only screen and (min-width: 1024px) {
+  .table {
+    width: 60%; }
+  .table-accent {
+    width: 25%; } }
+
+@media only screen and (max-width: 1023px) {
+  /*cambiar orden de elementos*/
+  .reverse {
+    flex-wrap: wrap-reverse; }
+  /*botones*/
+  .btn {
+    width: 40%; }
+  /*esconder elementos*/
+  .hide {
+    display: none; } }
+
+@media only screen and (max-width: 767px) {
+  /*Espacio a los lados*/
+  .container {
+    padding-left: 30px;
+    padding-right: 30px; }
+  /*Espacio entre elementos*/
+  .container div:first-child {
+    margin-bottom: 20px; }
+  /*botones*/
+  .btn {
+    width: 75%; }
+  .btn-container {
+    text-align: center; }
+  /*Campos de formulario*/
+  .full-width {
+    width: 80%; } }
 
 /*animaciones*/
 @keyframes aparecer {
@@ -84,3 +113,14 @@ body {
 button, textarea, input, input[type="submit" i], input[type="reset" i] {
   appearance: none;
   border: none; }
+
+/*Links de la barra de navegacion*/
+.dropdown-item.active {
+  background-color: #2EC4B6; }
+
+.nav-link.active {
+  color: #ffb048 !important; }
+
+.dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus {
+  background-color: #fff; }
+
