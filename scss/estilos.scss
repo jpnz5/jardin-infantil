@@ -13,3 +13,16 @@ button, textarea, input, input[type="submit" i], input[type="reset" i]{
     appearance: none;
     border:none;
 }
+
+
+/*Links de la barra de navegacion*/
+
+.dropdown-item.active{
+    background-color: $primary;
+}
+.nav-link.active{
+    color:$accent !important;
+}
+.dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus{
+    background-color: #fff;
+}
