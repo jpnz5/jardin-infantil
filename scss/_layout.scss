@@ -8,34 +8,36 @@ body{
 
 /* Colores nav bar , headings, links*/
 h1, h3, .btn{
-    font-weight: 800;
+    font-weight: $heavy-weight;
 }
 
 h1,h3, footer ul a, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link, .dropdown-item{ color: $primary;}
 
 footer ul a:hover, .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus, .dropdown-item:hover {color:$accent;}
 
+
 /*    Botones   */
 .btn-primary{
     background-color: $accent;
     border-color: $accent;
 }
+
 .btn-primary:hover,.btn-primary:focus {
-    background-color: #2EC4B6;
-    border-color: #2EC4B6;
+    background-color: $primary;
+    border-color: $primary;
 }
 
 /*    Cards   */
 .dashed-border{
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='32' ry='32' stroke='%23FFB048FF' stroke-width='1' stroke-dasharray='7%2c 10' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
-    border-radius: 32px;
+    border-radius: $p10*3.2;
 }
 
 
-/*  Formularios inico  */
+/*  Formularios inicio  */
 
 .neutral-border{
-    border: solid 1px #d8d8d8;
+    border: $basico;
 }
 
 
@@ -49,25 +51,10 @@ table{
 .bg-special, th.table-accent, td.table-accent{
     background-color: $neutral-secondary;
 }
+
 .rounded-3, th.table-accent, td.table-accent, .btn-primary{
     border-radius: 2em !important;
 } 
-
-/*  MEDIA QUERIES   */
-@media only screen and (min-width: 1024px) {
-    .table{
-        width:$width*0.6;
-    }
-
-    .table-accent{
-        width:$width*0.25;
-    }
-
-}
-
-@media only screen and (min-width: 768px){
-
-}
 
 
 /*Animaciones y transiciones*/
@@ -82,7 +69,64 @@ body{
 }
 
 
+/*  MEDIA QUERIES   */
+@media only screen and (min-width: 1024px) {
+    .table{
+        width:$width*0.6;
+    }
 
+    .table-accent{
+        width:$width*0.25;
+    }
+
+}
+
+@media only screen and (max-width: 1023px){
+
+    /*cambiar orden de elementos*/
+    .reverse{
+        flex-wrap: wrap-reverse;
+    }
+
+    /*botones*/
+    .btn{
+        width:$width*0.4;
+    }
+
+    /*esconder elementos*/
+    .hide{
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 767px){
+    /*Espacio a los lados*/
+    .container{
+        padding-left: $p10*3;
+        padding-right: $p10*3; 
+    }
+    
+    /*Espacio entre elementos*/
+    .container div:first-child{
+        margin-bottom: $p10*2;
+    }
+    
+    /*botones*/
+    .btn{
+        width:$width*0.75;
+    }
+
+    .btn-container{
+        text-align: center;
+    }
+
+    /*Campos de formulario*/
+    .full-width{
+        width: $width*0.8;
+    }
+
+}
 
 
 
