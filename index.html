@@ -28,7 +28,7 @@
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav justify-content-end w-100">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="institucion.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -52,15 +52,15 @@
     <section class="my-5">
         <!--Seccion 1 - Bienvenida con call to action-->        
         <article class="container my-5">
-            <div class="row">
+            <div class="row reverse">
                 <!--Parrafo con texto + boton-->
-                <div class="col-12 col-sm-6 mb-5">
+                <div class="col-12 col-md-6 my-2">
                     <h1>Abiertas las inscripciones 2022</h1>
                     <p class="lead">Nada como visitar nuestras instalaciones, para confirmar que somos lo que buscas. 
                         Te estamos esperando, ¡agendá una entrevista con nuestros especialistas!</p>
-                    <a href="contacto.html" class="btn btn-primary">Agendar Visita</a>
+                    <div class="btn-container"><a href="contacto.html" class="btn btn-primary">Agendar Visita</a></div>
                     </div>
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-md-6 my-2">
                     <img src="img/Group 39.png" alt="imagen decorativa" class="img-fluid">
                 </div>
             </div>
@@ -101,27 +101,27 @@
         </article>
         <article class="container my-5">
             <!--Seccion de Conocenos - call to action para q vayan a institucion-->
-            <h3 class="text-center">¿Por qué Birdy?</h3>
             <div class="row my-5">
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-md-6">
                     <img src="img/Group 34.png" alt="imagen decorativa" class="img-fluid">
                 </div>
-                <div class="col-12 col-sm-6">
+                <div class="col-12 col-md-6">
+                    <h3>¿Por qué Birdy?</h3>
                     <p class="mt-2">Somos expertos en lo que hacemos, acercamos el conocimiento de formas atractivas, motivadoras y efectivas, para que aprender también sea un juego! </p>
-                   <a href="educadores.html" class="btn btn-primary">Ver más</a>              
+                    <div class="btn-container"><a href="educadores.html" class="btn btn-primary">Ver más</a></div>         
                 </div>
             </div>
             
         </article>
         <article class="py-3 my-2 bg-special">
             <!--Seccion para formulario de contacto - VISITA -->
-            <div class="container mx-auto">
+            <div class="container mx-auto py-3">
                 <h3 class="h4 text-center">Agendá una visita</h3>
                 <form class="text-center my-4">
-                    <input class="neutral-border rounded-3 px-4 py-2 mx-2" type="text" name="nombre_completo" placeholder="Nombre Completo">
-                    <input class="neutral-border rounded-3 px-4 py-2 mx-2" type="email" name="email" placeholder="Email">
-                    <input class="neutral-border rounded-3 px-4 py-2 mx-2" type="tel" name="telefono" placeholder="Telefono">
-                    <input type="submit" value="Enviar" class="btn btn-primary px-4 py-2 mx-2"/>
+                    <input class="neutral-border rounded-3 px-4 py-2 m-2 full-width" type="text" name="nombre_completo" placeholder="Nombre Completo">
+                    <input class="neutral-border rounded-3 px-4 py-2 m-2 full-width" type="email" name="email" placeholder="Email">
+                    <input class="neutral-border rounded-3 px-4 py-2 m-2 full-width" type="tel" name="telefono" placeholder="Telefono">
+                    <input type="submit" value="Enviar" class="btn btn-primary px-4 py-2 m-2"/>
                 </form>
             </div>
         </article>
@@ -183,22 +183,22 @@
                 <h3 class="h4 text-center">¿Aún con dudas?</h3>
                 <!--formulario de contacto + imagen-->
                 <form class="row my-4">
-                    <div class="col col-lg-3 col-sm-1"></div>
-                    <div class="col col-lg-3 col-sm-1">
-                        <input  class="neutral-border rounded-3 px-4 py-2 mx-2 my-2" type="text" name="nombre_completo" placeholder="Nombre Completo">
-                        <input class="neutral-border rounded-3 px-4 py-2 mx-2 my-2" type="email" name="email" placeholder="Email">
+                    <div class="col-12 col-lg-3 col-md-1"></div>
+                    <div class="col-12 col-lg-3 col-md-5 col-sm-6 text-center">
+                        <input  class="neutral-border rounded-3 px-4 py-2 m-2 full-width" type="text" name="nombre_completo" placeholder="Nombre Completo">
+                        <input class="neutral-border rounded-3 px-4 py-2 m-2 full-width" type="email" name="email" placeholder="Email">
                     </div>
-                    <div class="col col-lg-3 col-sm-1">
-                        <textarea class="neutral-border rounded-3 px-4 py-2 mx-2" placeholder="Mensaje"></textarea>
-                        <input type="submit" value="Enviar" class="btn btn-primary px-4 py-2 mx-2"/>
+                    <div class="col-12 col-lg-3 col-md-5 col-sm-6 text-center">
+                        <textarea class="neutral-border rounded-3 px-4 py-2 m-2 full-width" placeholder="Mensaje"></textarea>
+                        <input type="submit" value="Enviar" class="btn btn-primary px-4 py-2 m-2"/>
                     </div>
-                    <div class="col col-lg-3 col-sm-1"></div>
+                    <div class="col col-lg-3 col-md-1"></div>
                 </form> 
             </div>           
         </article>
     </section>
     <!--Pie de pagina-->
-    <footer class="container my-5-top">
+    <footer class="container pt-4">
         <div class="row">
             <!--Info del colegio-->
             <div class="col col-lg-3 col-md-4 col-sd-6">
